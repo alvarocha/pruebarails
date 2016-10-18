@@ -1,0 +1,36 @@
+<h1>Pages#batman vs superman</h1>
+
+<style type="text/css">
+  .left{float:left;
+    /* Set rules to fill background */
+  min-height: 50%;
+  min-width: 512px;
+	
+  /* Set up proportionate scaling */
+  width: 50%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0}
+
+  .right{float:right;
+    min-height: 100%;
+  min-width: 512px;
+	
+  /* Set up proportionate scaling */
+  width: 50%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  right: 0}}
+</style>
+<h1 style="color:white">I am Batman</h1>
+<div>
+<a href="<%=pages_batman_path%>"><img src="<%= asset_path "batman"%>" class="left"></a>
+<a href="<%=pages_superman_path%>" ><img src="<%= asset_path "superman"%>" class="right" hight=50px></a>	
+	
+</div>
