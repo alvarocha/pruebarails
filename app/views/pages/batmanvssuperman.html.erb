@@ -30,7 +30,34 @@
 </style>
 <h1 style="color:white">I am Batman</h1>
 <div>
-<a href="<%=pages_batman_path%>"><img src="<%= asset_path "batman"%>" class="left"></a>
-<a href="<%=pages_superman_path%>" ><img src="<%= asset_path "superman"%>" class="right" hight=50px></a>	
+	<p z-index:10>AAAAAAAAAAAA</p>
+<a href="<%=pages_batman_path%>">vota x batman</a>
+	<img src="<%= asset_path "batman"%>" class="left" z-index:-1>
+<a href="<%=pages_superman_path%>" >vota x superman</a>
+	<img src="<%= asset_path "superman"%>" class="right" hight=50px>
 	
+</div>
+
+
+<div>
+	<div>
+		<h1>
+			<h3>Inscríbite por batman </h3>
+				<form method="post" action="<%= pages_save_data_batman_path %>">
+					<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+				 	Name: <input type="text" name="name" placeholder="nombre"> 
+				 	Email: <input type="text" name="email" placeholder="correo">
+				 	Heroe: <input type="text" name="heroe" placeholder="Heroe">
+					<input type="submit" value="Enviar">
+				</form>
+			<h3>Inscríbite por Superman </h3>
+				<form method="post" action="<%= pages_save_data_superman_path %>">
+					<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+				 	Name: <input type="text" name="name" placeholder="nombre"> 
+				 	Email: <input type="text" name="email" placeholder="correo">
+				 	Heroe: <input type="text" name="heroe" placeholder="Heroe">
+					<input type="submit" value="Enviar">
+				</form>
+		</h1>
+	</div>
 </div>
