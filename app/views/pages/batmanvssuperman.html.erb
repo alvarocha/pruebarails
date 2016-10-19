@@ -1,44 +1,5 @@
 <h1>Pages#batman vs superman</h1>
 
-<style type="text/css">
-  .left{float:left;
-    /* Set rules to fill background */
-  min-height: 50%;
-  min-width: 512px;
-	
-  /* Set up proportionate scaling */
-  width: 50%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0}
-
-  .right{float:right;
-    min-height: 100%;
-  min-width: 512px;
-	
-  /* Set up proportionate scaling */
-  width: 50%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  right: 0}}
-</style>
-<h1 style="color:white">I am Batman</h1>
-<div>
-	<p style="z-index:10">AAAAAAAAAAAA</p>
-<a href="<%=pages_batman_path%>">vota x batman</a>
-	<img src="<%= asset_path "batman"%>" class="left" z-index:-1>
-<a href="<%=pages_superman_path%>" >vota x superman</a>
-	<img src="<%= asset_path "superman"%>" class="right" hight=50px>
-	
-</div>
-
-
 <div>
 	<div>
 		<h1>
@@ -60,4 +21,41 @@
 				</form>
 		</h1>
 	</div>
+</div>
+
+<style type="text/css">
+  .left{float:left;
+    /* Set rules to fill background */
+  min-height: 50%;
+  min-width: 512px;
+	
+  /* Set up proportionate scaling */
+  width: 50%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top:100;
+  left: 0}
+
+  .right{float:right;
+    min-height: 100%;
+  min-width: 512px;
+	
+  /* Set up proportionate scaling */
+  width: 50%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 100;
+  right: 0}}
+</style>
+<h1 style="color:black">Vota x Batman o superman</h1>
+<div>
+<a href="<%=pages_batman_path%>">vota x batman</a>
+	<img src="<%= asset_path "batman"%>" class="left" z-index:-1>
+<a href="<%=pages_superman_path%>" >vota x superman</a>
+	<img src="<%= asset_path "superman"%>" class="right" hight=50px>
+	
 </div>
